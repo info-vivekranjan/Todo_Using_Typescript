@@ -32,7 +32,7 @@ const Todos: React.FC = () => {
                 <input type="text" placeholder="Enter todos" onChange={handleChange} value={query} style={{ fontSize: '18px', padding: '10px', borderRadius: '10px' }} />
                 <input type="submit" value="Add" />
             </form>
-            <TodoList todos={todoData} />
+            <TodoList todos={todoData} setTodoData={setTodoData} />
         </>
     )
 }
